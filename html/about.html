@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>About</title>
+</head>
+
+<body>
+    <!-- HEADER/NAVIGATION BAR (TOP SECTION) -->
+    <div id="header" class="colored flex-container">
+        <div id="logo" style="display: flex; align-items: center;">
+            <img id="title-logo" src="logos/logo.png" style="width: 50px; height: 50px;" />
+            <span style="color: white; margin-left: 10px;">BINARY MULTIPLICATION</span>
+            <a class="no-decor" onclick="window.location.reload();">
+            </a>
+        </div>
+        <div id="title">
+            <div class="inner">
+                <a class="no-decor" onclick="window.location.reload();">
+                    <span id="title-text"></span>
+                </a>
+            </div>
+        </div>
+
+        <div class="small-padding">
+            <div class="inner">
+                <span></span>
+            </div>
+        </div>
+
+        <div id="pencil-and-paper" class="hidden mul-methods">
+            <div class="inner" style="display: flex; align-items: center; justify-content: center; margin: 0; padding: 0;">
+                <a class="no-decor" href="index.html" style="margin: 0; padding: 0;">
+                    <img id="pencil-logo" src="logos/pencil.png" style="display: flex; align-items: center; justify-content: center;width: 40px; height: 40px; margin: 0; padding: 0;" />
+                </a>
+                <a class="no-decor" href="index.html" style="margin: 0; padding: 0;">
+                    <span id="pencil-text" class="selected" style="color: white; margin-left: 5px; margin: 0; padding: 0;">PENCIL & PAPER</span>
+                </a>
+            </div>
+        </div>
+
+        <div id="booths" class="hidden mul-methods">
+            <div class="inner" style="display: flex; align-items: center; justify-content: center; margin: 0; padding: 0;">
+                <a class="no-decor" href="booth.html" style="margin: 0; padding: 0;">
+                    <img id="extended-logo" src="logos/booth.png" style="display: flex; align-items: center; justify-content: center;width: 40px; height: 40px; margin: 0; padding: 0;" />
+                </a>
+                <a class="no-decor" href="booth.html" style="margin: 0; padding: 0;">
+                    <span id="booths-text" class="selected" style="color: white; margin-left: 5px; margin: 0; padding: 0;">BOOTH'S</span>
+                </a>
+            </div>
+        </div>
+
+        <div id="extended-booths" class="hidden mul-methods">
+            <div class="inner" style="display: flex; align-items: center; justify-content: center; margin: 0; padding: 0;">
+                <a class="no-decor" href="extended_booth.html" style="margin: 0; padding: 0;">
+                    <img id="extended-logo" src="logos/ext-booth.png" style="display: flex; align-items: center; justify-content: center;width: 40px; height: 40px; margin: 0; padding: 0;" />
+                </a>
+                <a class="no-decor" href="extended_booth.html" style="margin: 0; padding: 0;">
+                    <span id="extended-booths-text" class="selected" style="color: white; margin-left: 5px; margin: 0; padding: 0;">EXTENDED BOOTH'S</span>
+                </a>
+            </div>
+        </div>
+
+        <div id="about-details" class="hidden mul-methods" style="display: flex; align-items: center; justify-content: center;">
+            <div class="inner" style="display: flex; align-items: center; justify-content: center; margin: 0; padding: 0;">
+                <a class="no-decor about-header" href="about.html" style="margin: 0; padding: 0;" tabindex="0">
+                    <img id="about-details-logo" src="logos/about-logo.png" style="display: flex; align-items: center; justify-content: center;width: 40px; height: 40px; margin: 0; padding: 0;" />
+                </a>
+            </div>
+            <div class="inner">
+                <a class="no-decor" href="about.html" style="margin: 0; padding: 0;">
+                    <span id="about-details-text" class="selected" style="color: white; margin-left: 5px; margin: 0; padding: 0;">ABOUT</span>
+                </a>
+            </div>
+        </div>
+
+        <div id="about-details" class="hidden mul-methods" style="display: flex; align-items: center; justify-content: center;">
+            <div class="inner" style="display: flex; align-items: center; justify-content: center; margin: 0; padding: 0;">
+                <a class="no-decor about-header" href="about.html" style="margin: 0; padding: 0;" tabindex="0">
+                    <img id="about-details-logo" src="logos/about-logo.png" style="display: flex; align-items: center; justify-content: center;width: 40px; height: 40px; margin: 0; padding: 0;" />
+                </a>
+            </div>
+            <div class="inner">
+                <a class="no-decor" href="about.html" style="margin: 0; padding: 0;">
+                    <span id="about-details-text" class="selected" style="color: white; margin-left: 5px; margin: 0; padding: 0;">Step By Step</span>
+                </a>
+            </div>
+        </div>
+
+        <div id="about-details" class="hidden mul-methods" style="display: flex; align-items: center; justify-content: center;">
+            <div class="inner" style="display: flex; align-items: center; justify-content: center; margin: 0; padding: 0;">
+                <a class="no-decor about-header" href="about.html" style="margin: 0; padding: 0;" tabindex="0">
+                    <img id="about-details-logo" src="logos/about-logo.png" style="display: flex; align-items: center; justify-content: center;width: 40px; height: 40px; margin: 0; padding: 0;" />
+                </a>
+            </div>
+            <div class="inner">
+                <a class="no-decor" href="about.html" style="margin: 0; padding: 0;">
+                    <span id="about-details-text" class="selected" style="color: white; margin-left: 5px; margin: 0; padding: 0;">All Steps</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <!--About section-->
+    <div id="about.html"></div>
+    <div style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; margin-bottom: 30px;">
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin-right: 50px; flex: 1;">
+            <br />
+            <br />
+            <br />
+            <br />
+            <h1 style="text-align: center;  margin-left: 50px;">About Us!</h1>
+            <br />
+            <br />
+            <div style="font-family:'Arial Narrow'; font-size: 18px; text-align: center; margin-left: 50px; font-weight: normal;">
+                <h3 style="margin-top: auto; margin-bottom: auto;">The Binary Multiplication Group is a team of computer science students composed of Audric Ang, </h3>
+                <h3 style="margin-top: auto; margin-bottom: auto;">Francesca Cruz, Erin La'o, and Angela Olonan. They are passionate about exploring the </h3>
+                <h3 style="margin-top: auto; margin-bottom: auto;">intricacies of binary multiplication, a fundamental operation in computer science.</h3>
+                <h3 style="margin-bottom: auto;">Binary multiplication is the process of multiplying two binary numbers. In this webpage, we aim to </h3>
+                <h3 style="margin-top: auto; margin-bottom: auto;">explore the various methods and techniques used to perform binary multiplication efficiently which </h3>
+                <h3 style="margin-top: auto; margin-bottom: auto;">involves using the pencil-and-paper method or algorithms like the Booth algorithm and extended</h3>
+                <h3 style="margin-top: auto; margin-bottom: auto;">Booth's algorithm. These methods are used to reduce the number of intermediate products and</h3>
+                <h3 style="margin-top: auto; margin-bottom: auto;">make the operation more efficient.</h3>
+                <h3 style="margin-bottom: auto;">Whether you're a student, researcher, or professional in the field, we welcome you to join our </h3>
+                <h3 style="margin-top: auto; margin-bottom: auto;">community and engage in discussions about binary multiplication. Together, we can deepen our </h3>
+                <h3 style="margin-top: auto; margin-bottom: auto;">understanding of this fundamental operation and its importance in modern technology.</h3>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!-- FOOTER (BOTTOM SECTION) -->
+    <div id="footer" class="colored flex-container">
+        <div id="about" class="hidden">
+            <div id="about-logo-div" class="inner">
+                <a class="no-decor" href="https://github.com/XSverdar/csarch2-simulation/tree/main" target="_blank">
+                    <img id="about-logo" src="logos/git-logo.png" style="width: 35px; height: 35px; filter: invert(100%);" />
+                </a>
+            </div>
+            <div class="inner center" style="display: flex; justify-content: center;">
+                <a class="no-decor no-hover menu" href="https://github.com/XSverdar/csarch2-simulation/tree/main" target="_blank" style="order: 1;">
+                    <span style="color: white;">Browse Repository</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,283 @@
+/* HEADER SECTION */
+
+@font-face {
+    font-family: BebasNeue;
+    src: url(BebasNeue.ttf);
+}
+
+body {
+    background-color: #DBEBED;
+    font-family: BebasNeue;
+}
+
+#header {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #10564F;
+    color: #fff;
+    padding: 10px;
+    font-size: 30px;
+}
+
+#logo img {
+    height: 50px;
+}
+
+#title {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.center-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mul-methods span {
+    font-size: 18px;
+}
+
+#pencil-and-paper,
+#booths,
+#extended-booths,
+#about-details {
+    display: flex;
+    align-items: center;
+}
+
+#pencil-and-paper img,
+#booths img,
+#extended-booths img,
+#about-details img {
+    height: 25px;
+    margin-right: 5px;
+}
+
+#pencil-and-paper span,
+#booths span,
+#extended-booths span,
+#about-details span {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#about-details-container {
+    margin-right: 20px;
+}
+
+
+/* Display mode */
+
+#display-mode {
+    flex-grow: 15;
+    position: relative;
+}
+
+#display-mode-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 170px;
+}
+
+#display-mode-content {
+    position: absolute;
+    width: 170px;
+    margin-top: 0px;
+    background-color: var(--green-bg);
+    z-index: 1;
+    padding-top: 20px;
+    padding-bottom: 13px;
+    text-align: center;
+    display: none;
+}
+
+#display-mode>div {
+    text-align: right;
+    height: 100%;
+}
+
+
+/* INPUT SECTION */
+
+#multiplicand-div,
+#multiplier-div {
+    font-size: 22px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.input-container {
+    border-left: 4px solid var(--gray-emphasis);
+    width: 100% !important;
+    padding: 0px;
+    display: table;
+    margin-left: 2px;
+}
+
+.input-container p {
+    display: table-row;
+    padding: 0px;
+    width: 100%;
+}
+
+#input-numbers-dec-bin {
+    display: table;
+    margin-top: -28.7em;
+}
+
+#input-numbers-dec-bin p {
+    display: table-row;
+}
+
+#input-numbers-dec-bin label {
+    display: table-cell;
+    padding-left: 15px;
+}
+
+#multiplicand-dec-label,
+#multiplier-dec-label {
+    padding-bottom: 10px;
+}
+
+#multiplicand-dec,
+#multiplicand-bin,
+#multiplier-dec,
+#multiplier-bin {
+    width: calc(100% - 15px);
+}
+
+#multiplicand-container label {
+    padding-right: 18px;
+}
+
+#multiplicand-dec-label {
+    padding-right: 20px;
+}
+
+#multiplier-container label {
+    padding-right: 18px;
+}
+
+#multiplier-dec-label {
+    padding-right: 20px;
+}
+
+
+/* Multiply button and related elements */
+
+button {
+    font-size: 23px;
+    font-family: BebasNeue;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #10564F;
+    border: 0px;
+    color: rgb(255, 255, 255);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #10564F;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    background-color: #10564F;
+}
+
+button:disabled:hover {
+    cursor: not-allowed;
+    background-color: #10564F;
+}
+
+#multiply-div {
+    width: 100%;
+    margin-top: 20px;
+    display: table;
+}
+
+#multiply-div div {
+    display: table-caption;
+}
+
+#multiply {
+    width: 100%;
+}
+
+
+/* Trivia */
+
+#trivia-div {
+    font-size: 15px;
+    line-height: 1.5;
+    padding-bottom: 30px;
+}
+
+#trivia-header {
+    font-weight: bold;
+}
+
+#trivia-body a {
+    color: inherit !important;
+}
+
+#trivia-body a i {
+    color: inherit !important;
+}
+
+#footer {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between, center;
+    align-items: center;
+    background-color: #10564F;
+    color: #fff;
+    padding: 10px;
+    font-size: 18px;
+}
+
+h1,
+p {
+    text-align: center;
+}
+
+
+/* about logo */
+
+#about {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about-logo-div {
+    margin-left: 10px;
+}
+
+#about-logo {
+    height: 15px;
+}
+
+.no-decor {
+    text-decoration: none;
+}
+
+.menu {
+    margin-left: 10px;
+}

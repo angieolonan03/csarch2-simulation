@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/pencil.css">
+
+    <style>
+        title {
+            color: white;
+        }
+    </style>
+</head>
+
+
+<body>
+    <!-- HEADER/NAVIGATION BAR (TOP SECTION) -->
+    <div id="header" class="colored flex-container">
+        <div id="logo" style="display: flex; align-items: center;">
+            <img id="title-logo" src="logos/logo.png" style="width: 50px; height: 50px;" />
+            <span style="color: white; margin-left: 10px;">BINARY MULTIPLICATION</span>
+            <a class="no-decor" onclick="window.location.reload();">
+            </a>
+        </div>
+        <div id="title">
+            <div class="inner">
+                <a class="no-decor" onclick="window.location.reload();">
+                    <span id="title-text"></span>
+                </a>
+            </div>
+        </div>
+
+        <div class="small-padding">
+            <div class="inner">
+                <span></span>
+            </div>
+        </div>
+
+        <div id="pencil-and-paper" class="hidden mul-methods">
+            <div class="inner" style="display: flex; align-items: center; justify-content: center; margin: 0; padding: 0;">
+                <a class="no-decor" href="index.html" style="margin: 0; padding: 0;">
+                    <img id="pencil-logo" src="logos/pencil.png" style="display: flex; align-items: center; justify-content: center;width: 40px; height: 40px; margin: 0; padding: 0;" />
+                </a>
+                <a class="no-decor" href="index.html" style="margin: 0; padding: 0;">
+                    <span id="pencil-text" class="selected" style="color: white; margin-left: 5px; margin: 0; padding: 0;">PENCIL & PAPER</span>
+                </a>
+            </div>
+        </div>
+
+
+        <div id="booths" class="hidden mul-methods">
+            <div class="inner" style="display: flex; align-items: center; justify-content: center; margin: 0; padding: 0;">
+                <a class="no-decor" href="booth.html" style="margin: 0; padding: 0;">
+                    <img id="extended-logo" src="logos/booth.png" style="display: flex; align-items: center; justify-content: center;width: 40px; height: 40px; margin: 0; padding: 0;" />
+                </a>
+                <a class="no-decor" href="booth.html" style="margin: 0; padding: 0;">
+                    <span id="booths-text" class="selected" style="color: white; margin-left: 5px; margin: 0; padding: 0;">BOOTH'S</span>
+                </a>
+            </div>
+        </div>
+
+        <div id="extended-booths" class="hidden mul-methods">
+            <div class="inner" style="display: flex; align-items: center; justify-content: center; margin: 0; padding: 0;">
+                <a class="no-decor" href="extended_booth.html" style="margin: 0; padding: 0;">
+                    <img id="extended-logo" src="logos/ext-booth.png" style="display: flex; align-items: center; justify-content: center;width: 40px; height: 40px; margin: 0; padding: 0;" />
+                </a>
+                <a class="no-decor" href="extended_booth.html" style="margin: 0; padding: 0;">
+                    <span id="extended-booths-text" class="selected" style="color: white; margin-left: 5px; margin: 0; padding: 0;">EXTENDED BOOTH'S</span>
+                </a>
+            </div>
+        </div>
+
+        <div id="about-details" class="hidden mul-methods" style="display: flex; align-items: center; justify-content: center;">
+            <div class="inner" style="display: flex; align-items: center; justify-content: center; margin: 0; padding: 0;">
+                <a class="no-decor about-header" href="about.html" style="margin: 0; padding: 0;" tabindex="0">
+                    <img id="about-details-logo" src="logos/about-logo.png" style="display: flex; align-items: center; justify-content: center;width: 40px; height: 40px; margin: 0; padding: 0;" />
+                </a>
+            </div>
+            <div class="inner">
+                <a class="no-decor" href="about.html" style="margin: 0; padding: 0;">
+                    <span id="about-details-text" class="selected" style="color: white; margin-left: 5px; margin: 0; padding: 0;">ABOUT</span>
+                </a>
+            </div>
+        </div>
+
+        <div id="about-details" class="hidden mul-methods" style="display: flex; align-items: center; justify-content: center;">
+            <div class="inner" style="display: flex; align-items: center; justify-content: center; margin: 0; padding: 0;">
+                <a class="no-decor about-header" href="about.html" style="margin: 0; padding: 0;" tabindex="0">
+                    <img id="about-details-logo" src="logos/about-logo.png" style="display: flex; align-items: center; justify-content: center;width: 40px; height: 40px; margin: 0; padding: 0;" />
+                </a>
+            </div>
+            <div class="inner">
+                <a class="no-decor" href="about.html" style="margin: 0; padding: 0;">
+                    <span id="about-details-text" class="selected" style="color: white; margin-left: 5px; margin: 0; padding: 0;">Step By Step</span>
+                </a>
+            </div>
+        </div>
+
+        <div id="about-details" class="hidden mul-methods" style="display: flex; align-items: center; justify-content: center;">
+            <div class="inner" style="display: flex; align-items: center; justify-content: center; margin: 0; padding: 0;">
+                <a class="no-decor about-header" href="about.html" style="margin: 0; padding: 0;" tabindex="0">
+                    <img id="about-details-logo" src="logos/about-logo.png" style="display: flex; align-items: center; justify-content: center;width: 40px; height: 40px; margin: 0; padding: 0;" />
+                </a>
+            </div>
+            <div class="inner">
+                <a class="no-decor" href="about.html" style="margin: 0; padding: 0;">
+                    <span id="about-details-text" class="selected" style="color: white; margin-left: 5px; margin: 0; padding: 0;">All Steps</span>
+                </a>
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+
+    <!-- INPUT AREA (LEFT SECTION) -->
+    <div id="input-numbers" class="hidden">
+        <!--Extended Booth section-->
+        <div id="index.html"></div>
+        <div style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; margin-bottom: 30px;">
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin-right: 50px; flex: 1;">
+                <br />
+                <br />
+                <br />
+                <br />
+                <h1 style="text-align: center; margin-left: 450px;">Pen and Paper Algorithm</h1>
+                <div style="font-family:'Arial Narrow'; font-size: 14px; text-align: center; margin-left: 400px; font-weight: normal;">
+                    <h3 style="margin-top: auto; margin-bottom: auto;">Pencil-and-paper multiplication for binary numbers follows a process similar to that of decimal</h3>
+                    <h3 style="margin-top: auto; margin-bottom: auto;">multiplication, involving the multiplication of each bit of the multiplicand with each bit of the multiplier,</h3>
+                    <h3 style="margin-top: auto; margin-bottom: auto;">followed by addition of intermediate products to obtain the final answer. However, the binary system's</h3>
+                    <h3 style="margin-top: auto; margin-bottom: auto; margin-bottom: auto;">smaller radix simplifies the computation of intermediate products.</h3>
+                    <h3 style="margin-bottom: auto;">Here are the steps to perform binary pencil-and-paper multiplication:</h3>
+                    <h3 style="margin-bottom: auto;"><strong></strong>A. Represent the operands in two's complement.</strong>
+                    </h3>
+                    <h3 style="margin-top: auto; margin-bottom: auto;"><b>1.</b> For decimal numbers, use the minimum number of bits required.</h3>
+                    <h3 style="margin-top: auto;"><b>2.</b> For binary numbers, use the number of bits provided.</h3>
+                    <h3 style="margin-bottom: auto;"><b>B.</b> If necessary, sign-extend the operands to ensure they have the same number of bits.</h3>
+                    <h3 style="margin-bottom: auto;"><b>C.</b> Multiply the multiplicand with each digit of the multiplier.</h3>
+                    <h3 style="margin-top: auto; margin-bottom: auto;"><b>1.</b> Sign-extend the intermediate product to match the sum of the number</h3>
+                    <h3 style="margin-top: auto; margin-bottom: auto;"><b>of digits in the multiplicand and multiplier.</b></h3>
+                    <h3 style="margin-top: auto; margin-bottom: auto;"><b>2.</b> Like decimal pencil-and-paper multiplication, skip one bit</h3>
+                    <h3 style="margin-top: auto; margin-bottom: auto;">after each intermediate product.</h3>
+                    <h3 style="margin-top: auto; margin-bottom: auto;">3.If the multiplier is negative, add the two's complement of the multiplicand as</h3>
+                    <h3 style="margin-top: auto; margin-bottom: auto;">the last intermediate product.</h3>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <form id="input-numbers-dec-bin">
+        <div id="multiplicand-div">
+            <span style="font-size: 26px; font-weight: bold;">Multiplicand</span>
+            <br />
+        </div>
+
+        <div id="multiplicand-container" class="input-container">
+            <p>
+                <label id="multiplicand-dec-label" style="font-size: 20px; font-weight: normal;">
+                    Decimal
+                    <span class="tab-18"></span>
+                </label>
+                <input type="text" id="multiplicand-dec" autocomplete="off" oninput="isValidDec(this, 'multiplicand', value)" style="font-size: 20px; padding: 10px; width: 400px;" />
+            </p>
+            <p>
+                <label style="font-size: 20px; font-weight: normal;">Binary<span class="tab-32"></span></label>
+                <input type="text" id="multiplicand-bin" autocomplete="off" oninput="isValidBin(this, 'multiplicand', value)" style="font-size: 20px; padding: 10px; width: 400px;" />
+            </p>
+        </div>
+
+        <div class="error" id="multiplicand-error">
+            <p></p>
+        </div>
+
+        <br />
+
+        <div id="multiplier-div">
+            <span style="font-size: 26px; font-weight: bold;">Multiplier</span>
+            <br />
+        </div>
+        <div id="multiplier-container" class="input-container">
+            <p>
+                <label id="multiplier-dec-label" style="font-size: 20px; font-weight: bold;">
+                    Decimal
+                    <span class="tab-18"></span>
+                </label>
+                <input type="text" id="multiplier-dec" autocomplete="off" oninput="isValidDec(this, 'multiplier', value)" style="font-size: 20px; padding: 10px; width: 400px;" />
+            </p>
+            <p>
+                <label id="multiplier-bin-label" style="font-size: 20px; font-weight: bold;">Binary</label>
+                <input type="text" id="multiplier-bin" autocomplete="off" oninput="isValidBin(this, 'multiplier', value)" style="font-size: 20px; padding: 10px; width: 400px;" />
+            </p>
+        </div>
+
+
+        <div class="error" id="multiplier-error">
+            <p></p>
+        </div>
+
+        <br />
+
+        <div id="multiply-div">
+            <div>
+                <button id="multiply" type="button">MULTIPLY</button>
+            </div>
+        </div>
+
+        <br />
+    </form>
+    </div>
+    <!-- RESULTS AREA (RIGHT SECTION) -->
+    <div id="workspace" class="flex-container">
+        <div id="results" class="hidden">
+            <div id="algo-value" class="tracking-only"></div>
+
+            <div id="algo-name"></div>
+        </div>
+    </div>
+
+    <!-- FOOTER (BOTTOM SECTION) -->
+    <div id="footer" style="display: flex; justify-content: space-between; align-items: center; padding: 20px;">
+        <div id="about-logo-div" style="display: flex; align-items: center;">
+            <a class="no-decor" href="https://github.com/XSverdar/csarch2-simulation/tree/main" target="_blank">
+                <img id="about-logo" src="logos/git-logo.png" style="width: 35px; height: 35px; filter: invert(100%);" />
+            </a>
+            <div id="about-text" class="inner center" style="display: flex; justify-content: center; margin-left: 15px;">
+                <a class="no-decor no-hover menu" href="https://github.com/XSverdar/csarch2-simulation/tree/main" target="_blank">
+                    <span style="color: white;">Browse Repository</span>
+                </a>
+            </div>
+        </div>
+        <div id="footer-description" style="display: flex; justify-content: space-between; align-items: center; padding: 20px;">
+            <div id="about-logo-div" style="display: flex;  align-items: center;">
+                <span style="color: white;">Description</span>
+            </div>
+        </div>
+        <div id="footer-export" style="display: flex; justify-content: flex-start; align-items: center; padding: 20px;">
+            <div id="about-logo-div" style="display: flex; align-items: center;">
+                <img id="export-btn" src="logos/export.png" style="width: 35px; height: 35px;" />
+                <span id="export-btn" style="color: white; cursor: pointer;">Export Steps to File</span>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
